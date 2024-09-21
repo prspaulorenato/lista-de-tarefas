@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #93B4C3;
+}
+#img-prancheta img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    left: 50px;
+}
+.container h1{
+    margin-bottom: 20px;
+}
+
+
+
+form{
+    margin-bottom: 50px;
+}
+
+form button{
+    background-color: #3F7379;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: relative ;
+    
+}
+
+form input{
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    outline: none;
+    background-color: #f7f7f7;
+    width: 250px;
+    border: 5px solid #3F7379; 
+}
+
+form #btn-add{
+    top: 39%;
+    left: 10px;
+    top:5px;
+    width: 50px;
+    height: 50px;
+    color:#fff;
+    font-size: 32px;
+}
+h1{
+    color: #16363a;
+}
+
+.item-tarefa{
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 5px solid #3F7379;
+    position: relative;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.riscado {
+    text-decoration: line-through;
+    color: red;
+}
