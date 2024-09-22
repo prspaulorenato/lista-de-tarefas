@@ -4,18 +4,19 @@ $(document).ready(function () {
       const tarefa = $('#tarefa-nome').val();
       const novaTarefa = $('<div style="display:none"></div>');
 
-      $(`<div class="item-tarefa">
+      $(`<li class="item-tarefa">
          ${tarefa}
-      </div>
+      </li>
       `).appendTo(novaTarefa);
       $(novaTarefa).appendTo('#lista-tarefas');
       $(novaTarefa).fadeIn(1000);
       $('#tarefa-nome').val('');
    });
 
-   
-   $('#lista-tarefas').on('click', '.item-tarefa', function () {
+   $('#lista-tarefas').on('click', '.item-tarefa', function (e) {
+      e.preventDefault()
       $(this).toggleClass('riscado');
+
       if ($(this).hasClass('riscado')) {
          Swal.fire({
             icon: 'success',
@@ -23,6 +24,11 @@ $(document).ready(function () {
             text: 'Você concluiu essa tarefa com sucesso.',
             confirmButtonText: 'OK'
          });
+         $('.item-tarefa').fadeOut(2000, function () {
+            $(this).remove();
+         })
+
       }
    });
+
 });
