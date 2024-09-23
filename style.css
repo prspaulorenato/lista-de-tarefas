@@ -91,10 +91,21 @@ h1{
     color: red;
 }
 
-#del{
+
+
+.container #del{
+    display: block;
     color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: red;
+    left: 330px;
+    bottom: 100px;
+    position: relative;
+    border:2px solid #16363a; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    font-size: 32px;
+
 }

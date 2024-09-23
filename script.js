@@ -16,7 +16,6 @@ $(document).ready(function () {
    $('#lista-tarefas').on('click', '.item-tarefa', function (e) {
       e.preventDefault()
       $(this).toggleClass('riscado');
-
       if ($(this).hasClass('riscado')) {
          Swal.fire({
             icon: 'success',
@@ -27,9 +26,13 @@ $(document).ready(function () {
       }
    });
 
-   $('#del').on('click',function(e){
-      const lista_tarefas = $('#lista-tarefas')
-      $(lista_tarefas).remove()
-   })
+   $('#del').on('click', function (e) {
+      e.preventDefault();
+      $('.riscado').fadeOut(500,function(){
+         $('this').remove();
+      })
+   });
+
+   
 
 });
