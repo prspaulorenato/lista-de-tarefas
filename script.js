@@ -24,11 +24,12 @@ $(document).ready(function () {
             text: 'Você concluiu essa tarefa com sucesso.',
             confirmButtonText: 'OK'
          });
-         $('.item-tarefa').fadeOut(2000, function () {
-            $(this).remove();
-         })
-
       }
    });
+
+   $('#del').on('click',function(e){
+      const lista_tarefas = $('#lista-tarefas')
+      $(lista_tarefas).remove()
+   })
 
 });
