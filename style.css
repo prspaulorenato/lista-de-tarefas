@@ -45,8 +45,6 @@ form button{
     
 }
 
-
-
 form input{
     padding: 12px;
     border: none;
@@ -65,7 +63,7 @@ form #btn-add{
     width: 50px;
     height: 50px;
     color:#fff;
-    font-size: 32px;
+    font-size:32px;
 }
 h1{
     color: #16363a;
@@ -91,21 +89,14 @@ h1{
     color: red;
 }
 
-
-
 .container #del{
-    display: block;
-    color: #fff;
+    top: 39%;
+    left: 10px;
+    top:5px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: red;
-    left: 330px;
-    bottom: 100px;
-    position: relative;
-    border:2px solid #16363a; 
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    cursor: pointer;
+    color:#fff;
     font-size: 32px;
-
+    background-color: red;
+    
 }

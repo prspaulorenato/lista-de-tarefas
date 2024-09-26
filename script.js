@@ -1,4 +1,5 @@
 $(document).ready(function () {
+   // Adiciona uma tarefa
    $('form').on('submit', function (e) {
       e.preventDefault();
       const tarefa = $('#tarefa-nome').val();
@@ -13,6 +14,7 @@ $(document).ready(function () {
       $('#tarefa-nome').val('');
    });
 
+// risca a tarefa e exibe uma mensagem
    $('#lista-tarefas').on('click', '.item-tarefa', function (e) {
       e.preventDefault()
       $(this).toggleClass('riscado');
@@ -26,13 +28,11 @@ $(document).ready(function () {
       }
    });
 
+   // deleta todas as tarefas riscadas
    $('#del').on('click', function (e) {
       e.preventDefault();
       $('.riscado').fadeOut(500,function(){
          $('this').remove();
       })
    });
-
-   
-
 });
